@@ -1,0 +1,117 @@
+.wrapper {
+    width: 100%;
+    /*according to bulma, widescreen*/
+    max-width: 1407px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.header {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    height: var(--header-height);
+    width: 100%;
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    column-gap: 1rem;
+    position: fixed;
+    z-index: var(--z-normal);
+    background-color: var(--primary-color);
+    color: var(--very-soft-grey);
+}
+
+.header__left {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+}
+
+.header__right {
+    padding: .75rem 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+/*aside main container*/
+
+.aside-main-container {
+    display: flex;
+}
+
+/*Aside*/
+
+.aside {
+    position: fixed;
+    padding-top: var(--header-height);
+    height: 100vh;
+    width: var(--aside-width);
+}
+
+.aside ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.aside a {
+    text-decoration: none;
+}
+
+.main-nav {
+    height: calc(100vh - var(--header-height));
+    background-color: var(--dark-color);
+    padding: 1rem;
+    overflow-y: scroll;
+}
+
+/*main menu*/
+
+.main-menu {}
+
+.main-menu__item {
+    color: var(--white-color);
+    line-height: 1rem;
+    padding-bottom: .5rem;
+    margin-bottom: calc(.5rem - 1px);
+    border-bottom: 1px solid var(--normal-grey);
+}
+
+.main-menu__item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.main-menu__item-content {
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.main-menu__link {
+    color: inherit;
+}
+
+.main-sub-menu {
+    padding-top: .5rem;
+}
+
+.main-sub-menu__link {
+    line-height: 24px;
+    font-size: var(--small-font-size);
+    color: inherit;
+}
+
+.main-menu__item-content:hover, .main-sub-menu__link:hover {
+    color: var(--soft-grey);
+    transition: color .25s;
+}
+
+/*Main*/
+
+.main-container {
+    padding-top: var(--header-height);
+    margin-left: var(--aside-width);
+    width: calc(100% - var(--aside-width));
+    min-height: 100vh;
+}

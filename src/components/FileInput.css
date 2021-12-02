@@ -1,0 +1,117 @@
+.file-input {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 40px;
+    border-radius: var(--border-radius-size);
+    color: inherit;
+}
+
+.file-input__label-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: .5rem;
+}
+
+.file-input__label {
+    font-weight: 600;
+}
+
+.file-input_disabled {
+    background-color: var(--very-soft-grey);
+}
+
+.file-input_required .file-input__file-name {
+    border-right-color: var(--primary-color);
+    border-right-width: 3px;
+}
+
+.file-input__input {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+
+.file-input__icon {
+    border: 1px solid var(--soft-grey);
+    border-top-left-radius: var(--border-radius-size);
+    border-bottom-left-radius: var(--border-radius-size);
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+    height: 100%;
+    background-color: var(--very-soft-grey);
+}
+
+.file-input_disabled .file-input__icon, .file-input_disabled .file-input__file-name {
+    border-color: var(--very-soft-grey);
+}
+
+.file-input__file-name {
+    border-right: 1px solid var(--soft-grey);
+    border-top: 1px solid var(--soft-grey);
+    border-bottom: 1px solid var(--soft-grey);
+    border-top-right-radius: var(--border-radius-size);
+    border-bottom-right-radius: var(--border-radius-size);
+    display: flex;
+    align-items: center;
+    padding: 0 .5rem;
+    line-height: 1.25rem;
+    height: 100%;
+    width: 100%;
+}
+
+.file-input__file-name-text {
+    word-break: break-all;
+    display: -webkit-box;
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+}
+
+.file-input__tooltip {
+    position: absolute;
+    z-index: var(--z-normal);
+    top: calc(100% + .5rem);
+    left: 0;
+    display: inline-block;
+    background-color: var(--body-bg-color);
+    border: 1px solid var(--dark-color);
+    border-radius: .25rem;
+    font-size: var(--small-font-size);
+    color: var(--dark-color);
+    padding: .65rem .5rem;
+    box-shadow: 2px 3px 3px 2px var(--soft-grey);
+    pointer-events: none;
+}
+
+.file-input__tooltip-content {
+    white-space: nowrap;
+}
+
+.file-input__tooltip [class*='triangle'] {
+    color: rgb(253, 165, 107);
+    font-size: var(--big-font-size);
+}
+
+.file-input__tooltip-text {
+    display: inline-block;
+    margin-left: .5rem;
+}
+
+.file-input__tooltip-tail {
+    position: absolute;
+    background-color: var(--body-bg-color);
+    transform: rotate(135deg);
+    bottom: calc(100% - .5rem);
+    left: .75rem;
+    width: 1rem;
+    height: 1rem;
+    border: 1px solid var(--dark-color);
+    clip-path: polygon(0 0, 0% 100%, 100% 100%);
+}

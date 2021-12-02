@@ -1,0 +1,15 @@
+.section-header {
+    padding-bottom: 1rem;
+    border-bottom: 2px solid var(--dark-color);
+    margin-bottom: calc(1rem - 2px);
+    display: flex;
+}
+
+.section-header__title {
+    margin-bottom: 0;
+    line-height: 1;
+}
+
+.section-header__right-content {
+    margin-left: auto;
+}

@@ -1,0 +1,10 @@
+.section-title {
+    padding-bottom: 1rem;
+    border-bottom: 2px solid var(--dark-color);
+    margin-bottom: calc(1rem - 2px);
+}
+
+.section-title__h2 {
+    margin-bottom: 0;
+    line-height: 1;
+}

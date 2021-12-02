@@ -1,0 +1,100 @@
+.section {
+    padding: 1rem;
+    height: 100%;
+}
+
+.section__content {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+.section__form {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-flow: row;
+    gap: 1rem;
+}
+
+.section__table {
+    width: 100%;
+    border-collapse: collapse;
+    line-height: 1rem;
+    font-size: var(--small-font-size);
+}
+
+.section__table_font-size_normal {
+    font-size: var(--normal-font-size);
+}
+
+.section__table_bordered {
+    border: 1px solid var(--soft-grey);
+}
+ 
+.section__table thead {
+    border-bottom: 1px solid var(--soft-grey);
+}
+
+.section__table thead th {
+    font-weight: 600;
+}
+
+.section__table tbody tr:hover {
+    background-color: var(--very-soft-grey);
+}
+
+.section__table th, .section__table td {
+    padding: .25rem;
+}
+
+.section__table-cell_nowrap {
+    white-space: nowrap;
+}
+
+.section__table-cell_work-breaked {
+    word-break: break-all;
+}
+
+.section__react-paginate-container {
+    list-style: none;
+    padding-left: 0;
+    display: inline-flex;
+    column-gap: .25rem;
+}
+
+.section__react-paginate-container li {
+    height: 32px;
+    width: 32px;
+}
+
+.section__react-paginate-container a {
+    border: 1px solid var(--normal-grey);
+    cursor: pointer;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+}
+
+.section__react-paginate-container a:hover {
+    background-color: var(--soft-grey);
+}
+
+.section__react-paginate-active-link {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+
+/* .section__table [class*='fa'] {
+    color: var(--text-color);
+    display: inline-block;
+    padding: 0 .25rem;
+    margin-left: .5rem;
+    cursor: pointer;
+}
+
+.section__table [class*='fa']:hover {
+    text-shadow: 0 0 1px var(--dark-color);
+} */

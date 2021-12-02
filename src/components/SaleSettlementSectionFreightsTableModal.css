@@ -1,0 +1,41 @@
+.modal {
+    position: fixed;
+    z-index: var(--z-normal);
+    bottom: 0;
+    right: 0;
+    width: calc(100vw - var(--aside-width));
+    height: calc(100vh - var(--header-height));
+    background-color: rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal_open_close {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.modal__content {
+    padding: 1rem;
+    width: 88%;
+    height: 88%;
+    overflow-y: auto;
+    background-color: var(--body-bg-color);
+}
+
+.modal__content-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.modal__content-header [class*='fas'] {
+    cursor: pointer;
+    padding: 0.25rem
+}
+
+.modal__content-body {
+    display: flex;
+    flex-direction: column;
+    row-gap: .5rem;
+}

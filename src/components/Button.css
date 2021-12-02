@@ -1,0 +1,25 @@
+.button {
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    background-color: transparent;
+    border: none;
+    line-height: 24px;
+    font-size: var(--normal-font-size);
+    cursor: pointer;
+    padding: .5rem 1rem;
+    border-radius: var(--border-radius-size);
+}
+
+.button:focus {
+    outline: none;
+}
+
+.button_color_primary {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+
+.button_color_primary:hover, .button_color_primary:focus {
+    background-color: var(--primary-color-alt);
+}
